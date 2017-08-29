@@ -1,5 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	h1= title
+	p Welcome to #{title}
+	form(action='/',method='post')
+		input(type='text',name='description',placeholder='Enter your description',required)
+		input(type='number',name='channel',placeholder='Enter your money',required)
+		input(type='submit',name='save',value='save')
+
