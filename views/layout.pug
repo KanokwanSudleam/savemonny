@@ -2,6 +2,18 @@ doctype html
 html
   head
     title= title
+    script(src='https://www.gstatic.com/firebasejs/4.3.0/firebase.js')
+    script.
+      // Initialize Firebase
+      var config = {
+      apiKey: "AIzaSyCjn_bQoZuPltdoNwN2wo2QupRMu2m4lDI",
+      authDomain: "savemoney-bbd2c.firebaseapp.com",
+      databaseURL: "https://savemoney-bbd2c.firebaseio.com",
+      projectId: "savemoney-bbd2c",
+      storageBucket: "savemoney-bbd2c.appspot.com",
+      messagingSenderId: "961506056482"
+      };
+      firebase.initializeApp(config);
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     block content
